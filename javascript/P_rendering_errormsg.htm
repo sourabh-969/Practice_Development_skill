@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 14px;
+      }
+      #img-el {
+        border: 1px solid red;
+        background-color: brown;
+        width: 250px;
+        height: 150px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      #purchase-btn {
+        border: 1px solid black;
+        border-radius: 30px;
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 0;
+        padding: 15px;
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="img-el"></div>
+    <p>Nike shoe</p>
+    <button id="purchase-btn" onclick="errorlog()">Purchase - $149</button>
+    <p id="error"></p>
+  </body>
+  <script>
+    let errorEl = document.getElementById("error");
+    function errorlog() {
+      errorEl.textContent = "Something went wrong, please try again";
+      console.log("btn_Clicked");
+      // window.alert(errorEl)
+    }
+  </script>
+</html>

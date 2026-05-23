@@ -1,0 +1,6 @@
+script tag - inline ,end after body,external file
+varaiable - number,string
+console.log
+funstion
+eventlistern- onclick
+DOM - innertext,textcontent,getElementByID

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: godfather;
+    src: url("TheGodfather-v2.ttf");
+}
+
+body {
+    text-align: center;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 2rem;
+    color: #b482ca;
+    margin: 0;
+}
+
+.hero_section {
+    height: 500px;
+    background-image: url("./image/galaxy.gif");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+#logo {
+    font-size: 2rem;
+    font-family: "godfather";
+}
+
+h1 {
+    text-shadow: 0 0 4px black;
+}
+
+.underline {
+    border-bottom: 8px white solid;
+}
+
+button {
+    padding: 6px 12px;
+    background-color: white;
+    border-radius: 1px;
+    border: 1px white solid;
+    font-family: inherit;
+    font-size: 2rem;
+    color: #b482ca;
+    font-weight: 800;
+}

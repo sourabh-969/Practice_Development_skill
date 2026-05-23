@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 1.3rem;
+        }
+
+        #value1,#value2,#label1 {
+            text-decoration: underline;
+
+        }
+
+        #btnEl{
+            margin: 2px;
+            padding: 10px;
+            
+        }
+        .btn-el{
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span id="value1"></span>
+    <span id="value2"></span>
+    </div>
+   <div id="btnEl">
+     <button class="btn-el" onclick="aDD()">Add</button>
+    <button class="btn-el" onclick="Subreact()">Subreact</button>
+    <button class="btn-el" onclick="Divide()">Divide</button>
+    <button class="btn-el" onclick="Multiply()">Multiply</button>
+   </div>
+
+    <span id="label1"></span>
+</body>
+
+<script>
+    let num1 = 8
+    let num2 = 2
+    document.getElementById("value1").textContent = num1;
+    document.getElementById("value2").textContent = num2;
+    let result=document.getElementById("label1").textContent = "Sum:";
+
+    function aDD(){
+        let sum = num1+num2;
+        console.log(sum);
+        document.getElementById("label1").textContent += " "+sum;
+    }
+    function Subreact(){
+        let sum = num1-num2;
+        console.log(sum);
+        document.getElementById("label1").textContent += " "+sum;
+    }
+    function Divide(){
+        let sum = num1/num2;
+        console.log(sum);
+        document.getElementById("label1").textContent += " "+sum;
+    }
+    function Multiply(){
+        let sum = num1*num2;
+        console.log(sum);
+        document.getElementById("label1").textContent += " "+sum;
+    }
+</script>
+</html>

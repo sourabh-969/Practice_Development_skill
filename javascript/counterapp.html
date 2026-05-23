@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>People enter</h1>
+    <h2 id="count-dn">0</h2>
+    <button id="increment" onclick="increment()">increment</button>
+    <button onclick="decrement()">left</button>
+    <button id="save-btn" onclick="save()">save</button>
+    <p id="save-el">previous entries : </p>
+  </body>
+  <script>
+     let count =0;
+           let countEl =  document.getElementById("count-dn"); //pass in argument. 
+            // console.log(countEl)
+    function increment(){
+      count = count + 1;
+        countEl.innerText = count;
+     console.log("vaule update = " + count)
+    }
+
+     function decrement(){
+      count = count - 1;
+        countEl.innerText = count;
+     console.log("vaule update = " + count)
+    }
+
+    let saveEl = document.getElementById("save-el")
+
+    function save (){
+      // saveEl.innerText += " " + count + " - "
+              saveEl.textContent += count + " - "
+              countEl.textContent = 0 // element label value is reset.
+              count = 0; // console count track reset.
+
+      console.log(count)
+    }
+
+  </script>
+</html>

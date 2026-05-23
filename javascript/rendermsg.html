@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="welcome-el">0</p>
+</body>
+
+<script>
+    let welcomEl=document.getElementById("welcome-el");
+    let name = " k9am";
+    let greeting = "welcome back"
+        console.log(name)
+
+    welcomEl.innerText = greeting + name;
+        // welcomEl.innerText = welcomEl.innerText  + "🎉"
+
+    welcomEl.innerText += "🎉"
+    console.log(welcomEl)
+
+</script>
+</html>
