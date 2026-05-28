@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #title{
+            font-family: cursive;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.9rem;
+            font-weight: 800;
+            color: rgb(255, 162, 0);
+
+        }
+        #stage{
+            font-size: 5rem;
+            border: 1px solid rgb(254, 238, 238);
+            background-color: rgb(254, 238, 238) ;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(255, 162, 0);
+            font-family: cursive;
+
+
+        }
+        #fightButton{
+            background-color: rgb(255, 162, 0);
+            border: 1px solid rgb(255, 162, 0);
+            border-radius: 10px;
+            font-weight: bolder;
+            font-size: 1.7rem;
+            font-family: cursive;
+            margin-top: 1rem;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">Emoji fighters</div>
+    <div id="stage"></div>
+    <button id="fightButton" > Pick fighters!</button>
+</body>
+<script>
+    let fighters = [
+  "🐶", // dog
+  "🐱", // cat
+  "🐭", // mouse
+  "🐹", // hamster
+  "🐰", // rabbit
+  "🦊", // fox
+  "🐻", // bear
+  "🐼", // panda
+  "🐨", // koala
+  "🐯", // tiger
+  "🦁", // lion
+  "🐮", // cow
+  "🐷", // pig
+  "🐸", // frog
+  "🐵", // monkey
+  "🐔", // chicken
+  "🐧", // penguin
+  "🐦", // bird
+  "🦆", // duck
+  "🦉", // owl
+  "🦅", // eagle
+  "🦇", // bat
+  "🐺", // wolf
+  "🐗", // boar
+  "🐴", // horse
+  "🦄", // unicorn
+  "🐝", // bee
+  "🐛", // bug
+  "🦋", // butterfly
+  "🐌", // snail
+  "🐞", // ladybug
+  "🦀", // crab
+  "🦑", // squid
+  "🐙", // octopus
+  "🐠", // tropical fish
+  "🐟", // fish
+  "🐬", // dolphin
+  "🐳", // whale
+  "🐊", // crocodile
+  "🐢", // turtle
+  "🦎", // lizard
+  "🐍", // snake
+  "🦖", // T-Rex
+  "🦕", // sauropod
+  "🐋"  // whale
+];
+
+let stageEl = document.querySelector("#stage");
+let fightButton = document.querySelector("#fightButton")
+
+fightButton.addEventListener("click", function(){
+    let fighter_1 = Math.floor(Math.random()*fighters.length);
+    let fighter_2 = Math.floor(Math.random()*fighters.length);
+
+    stageEl.textContent = fighters[fighter_1] + " Vs " + fighters[fighter_2];
+})
+
+</script>
+</html>

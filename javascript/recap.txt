@@ -4,3 +4,13 @@ console.log
 funstion
 eventlistern- onclick
 DOM - innertext,textcontent,getElementByID
+
+Arrays
+object
+for loop
+data type- boolean
+if else statement
+comparison operator
+logical operator - AND,OR
+Math-floor and random
+reture statement
