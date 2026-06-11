@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 100px;
+            border-radius:10px;
+            font-size: 3rem;
+        }
+        #apple_Shelf{
+            background-color: rgb(247, 137, 161);
+            margin-bottom: 2rem;
+        }
+        #orange_Shelf{
+            background-color: rgb(239, 152, 140);
+        }
+    </style>
+</head>
+<body>
+    <div id="apple_Shelf">
+    </div>
+        
+    <div id="orange_Shelf">
+    </div>
+</body>
+<script>
+let fruit = ["🍎","🍊","🍎","🍎","🍊"]
+let appleShelf = document.querySelector("#apple_Shelf")
+let orangeShelf = document.querySelector("#orange_Shelf")
+
+function automate(){
+   for (let i =0; i<fruit.length; i++){
+    if(fruit[i] === "🍎"){
+        appleShelf.textContent += "🍎";
+    }else{
+        orangeShelf.textContent += "🍊"
+    }
+   }
+}
+
+automate()
+</script>
+</html>
